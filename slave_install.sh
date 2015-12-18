@@ -1,8 +1,8 @@
 #!/bin/sh
 
 sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install salt-minion ices2 build-essentials libusb-1.0-0-dev librtlsdr-dev libasound2-dev autossh
+sudo apt-get upgrade -y
+sudo apt-get install -y build-essential salt-minion ices2 libusb-1.0-0-dev librtlsdr-dev libasound2-dev libalsaplayer-dev autossh cmake vim
 
 # Install RTL SDR kernel module blacklist.
 sudo cp ./blacklist.conf /etc/modprobe.d/
